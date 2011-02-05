@@ -327,7 +327,9 @@ public:
 
     //Continuous AF.
     static const char KEY_CAF[];
+    static const char KEY_CONTINUOUS_AF[];
     static const char KEY_SUPPORTED_CAF[];
+    static const char KEY_SUPPORTED_CONTINUOUS_AF[];
 
     // Values for white balance settings.
     static const char WHITE_BALANCE_AUTO[];
@@ -444,6 +446,9 @@ public:
     // Values for Continuous AF
     static const char CAF_OFF[] ;
     static const char CAF_ON[] ;
+    // Proprietaries from CodeAurora use these...
+    static const char CONTINUOUS_AF_OFF[] ;
+    static const char CONTINUOUS_AF_ON[] ;
 
 private:
     DefaultKeyedVector<String8,String8>    mMap;

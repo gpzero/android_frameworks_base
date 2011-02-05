@@ -63,4 +63,9 @@ else
 LOCAL_SHARED_LIBRARIES += libcamera 
 endif
 
+ifeq ($(BOARD_USE_CAF_LIBCAMERA), true)
+    LOCAL_CFLAGS += -DBOARD_USE_CAF_LIBCAMERA
+endif
+
+
 include $(BUILD_SHARED_LIBRARY)
